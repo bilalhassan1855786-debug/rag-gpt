@@ -1,27 +1,33 @@
 {
-  "name": "rag-gpt",
-  "version": "0.1.0",
+  "name": "bilalgpt",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ingest": "tsx scripts/ingest-superior.ts"
   },
   "dependencies": {
-    "next": "16.3.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "@google/genai": "latest",
+    "dotenv": "^17.4.2",
+    "lucide-react": "latest",
+    "mongodb": "^7.5.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-markdown": "latest",
+    "remark-gfm": "latest"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.2.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
   }
 }
